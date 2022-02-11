@@ -58,7 +58,10 @@ export class AppComponent {
 
     let monthlyCallSMSPrice = 0.055 * (this.formMoiMobiiliReilu5G.calls + this.formMoiMobiiliReilu5G.sms);
 
-    let monthyDataPrice = dataprice4G + (dataPrice5G * (this.formMoiMobiiliReilu5G.dataAmount5G / this.formMoiMobiiliReilu5G.dataAmount4G));
+    let DataAmountSummary = this.formMoiMobiiliReilu5G.dataAmount5G / (this.formMoiMobiiliReilu5G.dataAmount5G + this.formMoiMobiiliReilu5G.dataAmount4G);
+    console.log(DataAmountSummary);
+
+    let monthyDataPrice = dataprice4G + (dataPrice5G * (this.formMoiMobiiliReilu5G.dataAmount5G / (this.formMoiMobiiliReilu5G.dataAmount5G + this.formMoiMobiiliReilu5G.dataAmount4G)));
 
     if(monthyDataPrice > dataMaxPrice5G)
       monthyDataPrice = dataMaxPrice5G;
