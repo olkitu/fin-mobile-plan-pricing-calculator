@@ -63,7 +63,7 @@ export class AppComponent {
     if(monthyDataPrice > dataMaxPrice5G)
       monthyDataPrice = dataMaxPrice5G;
 
-    if(this.formMoiMobiiliReilu5G.dataAmount4G == 0)
+    if(this.formMoiMobiiliReilu5G.dataAmount4G == 0 && this.formMoiMobiiliReilu5G.dataAmount5G == 0)
       monthyDataPrice = dataprice4G;
 
     // SMS & Call price max 4€
