@@ -13,22 +13,22 @@
         <br />
         <mat-form-field appearance="fill">
          <mat-label>5G datan määrä gigatavuina (Gt)</mat-label>
-          <input matInput type="number" name="dataAmount5G" [(ngModel)]="formMoiMobiiliReilu5G.dataAmount5G" (ngModelChange)="MoiMobileReilu5G()" autocomplete="off">
+          <input matInput type="number" name="dataAmount5G" min="0" [(ngModel)]="formMoiMobiiliReilu5G.dataAmount5G" (ngModelChange)="MoiMobileReilu5G()" autocomplete="off">
         </mat-form-field>
         <br />
         <mat-form-field appearance="fill">
           <mat-label>4G datan määrä gigatavuina (Gt)</mat-label>
-           <input matInput type="number" name="dataAmount4G" [(ngModel)]="formMoiMobiiliReilu5G.dataAmount4G" (ngModelChange)="MoiMobileReilu5G()" autocomplete="off">
+           <input matInput type="number" name="dataAmount4G" min="0" [(ngModel)]="formMoiMobiiliReilu5G.dataAmount4G" (ngModelChange)="MoiMobileReilu5G()" autocomplete="off">
          </mat-form-field>
          <br />
          <mat-form-field appearance="fill">
           <mat-label>Puhelut minuuteissa</mat-label>
-           <input matInput type="number" name="calls" [(ngModel)]="formMoiMobiiliReilu5G.calls" (ngModelChange)="MoiMobileReilu5G()" autocomplete="off">
+           <input matInput type="number" name="calls" min="0" [(ngModel)]="formMoiMobiiliReilu5G.calls" (ngModelChange)="MoiMobileReilu5G()" autocomplete="off">
          </mat-form-field>
          <br />
          <mat-form-field appearance="fill">
           <mat-label>Tekstiviestien määrä</mat-label>
-           <input matInput type="number" name="sms" [(ngModel)]="formMoiMobiiliReilu5G.sms" (ngModelChange)="MoiMobileReilu5G()" autocomplete="off">
+           <input matInput type="number" name="sms" min="0" [(ngModel)]="formMoiMobiiliReilu5G.sms" (ngModelChange)="MoiMobileReilu5G()" autocomplete="off">
          </mat-form-field>
       </form>
     </div>
