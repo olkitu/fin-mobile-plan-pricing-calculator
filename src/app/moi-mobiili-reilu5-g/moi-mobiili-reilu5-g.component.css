@@ -1,0 +1,17 @@
+html, body { height: 100%; }
+
+table {
+    width: 100%;
+}
+
+th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
+    padding: 0;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    height: 56px;
+}
+
+.column {
+    float: left;
+    width: 50%;
+  }
